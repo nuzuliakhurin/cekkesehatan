@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="601.0" prefWidth="413.0" style="-fx-background-color: #ffffff;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="cek_kesehatan.FXMLDocumentController">
+    <children>
+      <Label layoutX="72.0" layoutY="98.0" text="Nama">
+         <font>
+            <Font name="Tw Cen MT" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="136.0" text="Berat Badan">
+         <font>
+            <Font name="Tw Cen MT" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="183.0" text="Tinggi Badan">
+         <font>
+            <Font name="Tw Cen MT" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Nama" layoutX="178.0" layoutY="83.0" prefHeight="30.0" prefWidth="150.0" />
+      <TextField fx:id="Beratbadan" layoutX="178.0" layoutY="129.0" prefHeight="30.0" prefWidth="150.0" />
+      <TextField fx:id="TinggiBadan" layoutX="178.0" layoutY="176.0" prefHeight="30.0" prefWidth="150.0" />
+      <Label layoutX="70.0" layoutY="218.0" prefHeight="24.0" prefWidth="75.0" text="Jenis Kelamin" />
+      <RadioButton fx:id="pr" layoutX="180.0" layoutY="222.0" mnemonicParsing="false" text="Perempuan">
+         <toggleGroup>
+            <ToggleGroup fx:id="pilihan" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="lk" layoutX="179.0" layoutY="252.0" mnemonicParsing="false" text="Laki-laki">
+         <toggleGroup>
+            <ToggleGroup fx:id="pilihan" />
+         </toggleGroup>
+      </RadioButton>
+      <Button fx:id="Proses" layoutX="99.0" layoutY="289.0" mnemonicParsing="false" onAction="#Proses" text="PROSES">
+         <font>
+            <Font name="Tw Cen MT" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="Hapus" layoutX="240.0" layoutY="289.0" mnemonicParsing="false" onAction="#Hapus" text="RESET">
+         <font>
+            <Font name="Tw Cen MT" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="126.0" layoutY="328.0" text="HASIL ANALISA KESEHATAN" />
+      <Label layoutX="54.0" layoutY="367.0" text="Berat Badan Ideal Anda :" />
+      <TextArea fx:id="Hasil" layoutX="36.0" layoutY="410.0" prefHeight="64.0" prefWidth="340.0" text="HASIL" />
+      <TextArea fx:id="Saran" layoutX="36.0" layoutY="494.0" prefHeight="74.0" prefWidth="340.0" text="SARAN" />
+      <Line endX="100.0" layoutX="220.0" layoutY="49.0" startX="-100.0" />
+      <TextField fx:id="beratideal" layoutX="209.0" layoutY="361.0" prefHeight="30.0" prefWidth="65.0" />
+      <Label layoutX="289.0" layoutY="367.0" text="kg" />
+      <Label layoutX="146.0" layoutY="14.0" text="Cek Kesehatan">
+         <font>
+            <Font name="Tw Cen MT" size="22.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
